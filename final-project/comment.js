@@ -12,12 +12,18 @@ class MyComment extends HTMLElement {
   connectedCallback() {
     this.attachShadow({mode: 'open'})
     this.shadowRoot.appendChild(template.content.cloneNode(true))
+    this.shadowRoot.querySelector('p').textContent = input.value
+    
   }
 }
 
+submit.addEventListener('click', () => {
+  const comment = document.createElement('my-comment')
+  comments.appendChild(comment)
+})
 
-const element = document.createElement('my-comment')
-comments.append(element)
+
+
 
 
 customElements.define('my-comment', MyComment)
