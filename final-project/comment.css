@@ -1,0 +1,17 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.comment {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

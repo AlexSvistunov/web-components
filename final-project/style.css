@@ -1,0 +1,29 @@
+.news {
+  display: flex;
+  gap: 15px;
+}
+
+.news-item {
+  cursor: pointer;
+  max-width: 400px;
+  background-color: rgb(214, 199, 209);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.news-item__head {
+  display: flex;
+  align-items: center;
+
+}
+
+.news-item__title {
+  display: block;
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+.news-item__date {
+  display: block;
+  font-size: 12px;
+}

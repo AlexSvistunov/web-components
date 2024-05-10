@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./comment.css">
+</head>
+
+<body>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quaerat iusto magni quisquam cumque blanditiis expedita
+  aliquid. Sunt ullam laboriosam quas architecto similique consectetur exercitationem sit. Ut ipsum repellat ullam
+  aliquid magni distinctio earum, nihil consequuntur aut itaque ad nobis accusantium quidem suscipit omnis incidunt sit
+  reiciendis provident exercitationem debitis, pariatur molestiae voluptate doloremque? Assumenda culpa ex, tenetur
+  autem rerum corporis fuga dolore quibusdam corrupti nisi blanditiis beatae natus eligendi commodi at quo ducimus amet.
+  Aperiam, reprehenderit quo. Fugiat accusantium vitae possimus adipisci mollitia dolores excepturi quae nesciunt cum?
+  Pariatur nulla ullam quidem sapiente repudiandae fugit quod fuga earum accusantium.
+
+  <h3>Comments</h3>
+
+  <input class="input" type="text">
+  <button class="submit">Submit</button>
+
+  <template id="my-comment">
+    <li class="comment">
+      <div class="comment__top">
+        <span class="comment__nickname">Author</span>
+        <span class="comment__date">May 10, 2024</span>
+      </div>
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, harum!</p>
+
+      <div class="comment__bottom">
+        <button>Like</button>
+        <button>Dislike</button>
+        <button>Reply</button>
+      </div>
+    </li>
+
+    <style>
+      .comment {
+        max-width: 250px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .comment__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    </style>
+  </template>
+
+  <ul class="comments">
+    <!-- <li class="comment">
+      <div class="comment__top">
+        <span class="comment__nickname">Author</span>
+        <span class="comment__date">May 10, 2024</span>
+      </div>
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, harum!</p>
+
+      <div class="comment__bottom">
+        <button>Like</button>
+        <button>Dislike</button>
+        <button>Reply</button>
+      </div>
+    </li> -->
+
+    <my-comment></my-comment>
+
+  </ul>
+
+  <script src="./comment.js"></script>
+</body>
+
+</html>
