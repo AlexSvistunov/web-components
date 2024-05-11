@@ -1,0 +1,8 @@
+::slotted(h3) {
+  margin: 0;
+  font-size: 25px;
+}
+
+h3 {
+  color: plum;
+}

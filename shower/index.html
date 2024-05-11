@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <shower-deck>
+    <shower-slide>
+      <h3>Slide one</h3>
+
+      <style slot="styles">
+        ::slotted(h3) {
+          color: aqua;
+        }
+      </style>
+    </shower-slide>
+
+    <shower-slide>
+      <h3>Slide two</h3>
+
+      <style slot="styles">
+         ::slotted(h3) {
+          color: rgb(255, 20, 184);
+        }
+      </style>
+    </shower-slide>
+
+
+    <shower-slide>
+      <h3>Slide three</h3>
+
+      <style slot="styles">
+         ::slotted(h3)  {
+          color: rgb(108, 245, 3);
+        }
+      </style>
+    </shower-slide>
+
+    <slot>213</slot>
+  </shower-deck>
+
+
+  <script src="./index.js"></script>
+  <script src="./slide.js"></script>
+</body>
+
+</html>
